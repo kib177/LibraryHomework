@@ -119,13 +119,13 @@ public class Book {
                 '}';
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Book book = (Book) o;
-//        return Objects.equals(publish, book.publish) && Objects.equals(avtor, book.avtor);
-//
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(publish, book.publish) && Objects.equals(avtor, book.avtor) && Objects.equals(year,book.year);
+
+    }
 
 }
